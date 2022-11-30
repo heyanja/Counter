@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     private var counterValue: Int = 0 {
         didSet {
+            counterValueLabel.text = "Значение счётчика:\n\(counterValue)"
         }
     }
     @IBOutlet weak var counterButton: UIButton!
@@ -23,7 +24,6 @@ class ViewController: UIViewController {
     @IBAction func buttonDidTap(_ sender: Any) {
         print("Pushing")
         counterValue += 1
-        counterValueLabel.text = "Значение счётчика:\n\(counterValue)"
     }
 }
 
