@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     private var counterValue: Int = 0 {
         didSet {
-            counterValueLabel.text = "Значение счётчика:\n\(counterValue)"
+            counterValueLabel.text = "Counter value:\n\(counterValue)"
         }
     }
     @IBOutlet weak var counterButton: UIButton!
